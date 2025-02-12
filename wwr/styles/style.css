@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #9D7462   ;
@@ -20,22 +21,41 @@
     --nav-hover-link-color: white;
     --nav-hover-background-color: #396E94;
   }
+  
 
 /* Set a default font and background color for the body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto" ,Arial, sans-serif;
     background-color: #9D7462;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+#logo_link {
+    padding-top: 5px;
+
+
+}
+h2 {
+    margin: 0;
+}
+.home-title {
+    font-family: "Roboto" ,Arial, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.icon{
+    padding-top: 10px;
 }
 header{
     background-color: #9D9162;
-    text-align: center;
+    text-align: left;
 }
 nav a {
-    text-align: center;
+    text-align: left;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #9D626E;
@@ -43,13 +63,22 @@ nav a:hover {
 .book  {
     background-color: #9B7064;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join{
     background-color: #9D7462;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover {
     background-color: #9D626E;
+    
     
 }
 .join:hover {
@@ -61,17 +90,24 @@ nav a:hover {
 }
 .msg {
     background-color: #9D7462;
+    line-height: 1.5em;
+    padding: 35px;
+}
+.msg p{
+    font-size: 0.8em;
+    padding-bottom: 15px;
+
 }
 footer {
     background-color: #9D9162;
     text-align: left;
-    padding: 10px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    padding: 25px 50px;
+    padding-top: 15px;
+    margin-top: 200px;
 }
 footer a {
     text-decoration: none;
+    
 }
 footer p {
     text-align: left;
@@ -82,6 +118,7 @@ footer p {
 }
 .social {
     width: 50px;
+    padding-top: 15px;
 }
 
 /* Content class for layout */
@@ -104,4 +141,19 @@ footer p {
 }
 main section {
     text-align: center;
+}
+.river-card{
+    margin: 200px 0;
+}
+.camping-card{
+    margin: 200px 0;
+}
+.rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #d8bd99
+}
+main section img {
+    box-sizing: border-box;
 }
