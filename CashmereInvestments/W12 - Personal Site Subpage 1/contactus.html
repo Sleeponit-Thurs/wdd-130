@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="styles/contactus.css">
+</head>
+<div id="content">
+    <nav>
+        <a href="index.html" id="logo_link" target = "_blank">
+            <img src="images/logo.png" alt="Cashmere Investments Logo" class="logo" width ="200" height = "80">
+        </a>
+        <a href="index.html">Home</a>
+        <a href="site-information.html">Site Plan</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+<div id="home-grid">
+<body>
+    <img src="images\pexels-felipe-silva-1458994757-30928414.jpg" alt="image for page" id="chad">
+    <div id="contactusreading">
+    <p>
+        Chad (Property Manager) - 555-555-5555
+        With his incredible level of expertise chad has singlehandledly renovated a former apple sauce manufacturing plant
+        into anything you could dream of. 
+    </p>
+    <p>
+        Hatcheries, Cannaries, Auto repair bays, he has prepared spaces for all of these things.
+        There is no project too big for Chad to handle. He will prepare the space for you to build exactly what you can dream of.
+    </p>
+    </div>
+    <img src="images\pexels-photo-221047.jpeg" alt="image for page" id="reno">
+    
+    <div id="contactpanel">
+        <img src="images\phone-call.png" alt="image for page" id="phone">
+        <p>Contact Us at 555-555-5555 or send in a contact form below!</p>
+    
+        <button id="contactusbutton">Contact Us</button>
+    </div>
+</body>
+</div>
+<footer>
+    <p>© 2025 Cashmere Investments. All rights reserved.</p>
+    <p><a href="site-plan.html">Website Plan</a></p>
+    <p>Created by Jase Erickson</p>
+</footer>
+</div>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form action="" method="">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </p>
+        <p>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" />
+        </p>
+        <p>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </p>
+        <p class="button">
+            <button type="submit" id="dummysend">Send your message</button>
+          </p>
+      </form>
+    </div>
+  
+  </div>
+  <script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("contactusbutton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var dummysend = document.getElementById("dummysend");
+dummysend.onclick = function() {
+  alert("Thank you! We will reach out to you as soon as possible.");
+  modal.style.display = "none";
+}
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}  
+  </script>
+</html>
